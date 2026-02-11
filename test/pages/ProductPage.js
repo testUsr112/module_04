@@ -1,4 +1,4 @@
-import BasePage from './BasePage';
+import BasePage from './basePage';
 
 class ProductPage extends BasePage {
     get productName() {

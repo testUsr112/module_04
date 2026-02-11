@@ -1,5 +1,5 @@
-import BasePage from './BasePage';
-import FilterElements from './elements/FilterElements';
+import BasePage from './basePage';
+import FilterElements from './elements/filterElements';
 
 class HomePage extends BasePage {
 
