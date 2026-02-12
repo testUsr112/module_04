@@ -79,4 +79,4 @@ class HomePage extends BasePage {
 
 }
 
-export default HomePage;
+export default new HomePage();

@@ -35,4 +35,4 @@ class CartPage extends BasePage {
     }
 }
 
-export default CartPage;
+export default new CartPage();

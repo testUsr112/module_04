@@ -1,14 +1,10 @@
-import ProductPage from '../pages/ProductPage';
-import CartPage from '../pages/CartPage';
+import { productPage, cartPage } from '../pages/index.js';
 import { assert, expect } from 'chai';
 describe('Feature: Adding to Cart', function () {
-    let productPage;
-    let cartPage;
     beforeEach(async () => {
-        productPage = new ProductPage();
-        cartPage = new CartPage();
         await productPage.openProductPage('01KH0K6SYZGTHZNDWXBSME470P');
     });
+
     it('Scenario: Add product to the cart', async function () {
         await productPage.setQuantityInput(2);
         await productPage.clickAddToCartButton();

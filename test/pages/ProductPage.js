@@ -86,4 +86,4 @@ class ProductPage extends BasePage {
     }
 }
 
-export default ProductPage;
+export default new ProductPage();

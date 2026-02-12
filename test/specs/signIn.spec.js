@@ -1,10 +1,8 @@
-import LoginPage from '../pages/LoginPage';
+import { loginPage } from '../pages/index.js';
 import { assert } from 'chai';
 
 describe('Feature: Sign In', function () {
-    let loginPage;
     beforeEach(async () => {
-        loginPage = new LoginPage();
         await loginPage.open();
     });
 

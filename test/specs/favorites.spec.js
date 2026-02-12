@@ -1,11 +1,7 @@
-import LoginPage from '../pages/LoginPage';
-import ProductPage from '../pages/ProductPage';
+import { loginPage, productPage } from '../pages/index.js';
 import { expect } from 'chai';
 describe('Feature: Favourites', function () {
-    let loginPage;
-    let productPage;
     beforeEach(async () => {
-        loginPage = new LoginPage();
         await loginPage.open();
         await loginPage.enterEmail('test@test.com');
         await loginPage.enterPassword('123Aa45@');

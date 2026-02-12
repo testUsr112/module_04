@@ -1,13 +1,8 @@
-import HomePage from '../pages/HomePage';
-import ProductPage from '../pages/ProductPage';
+import { homePage, productPage } from '../pages/index.js';
 import { assert, expect } from 'chai';
 
 describe('Feature: Product details page', function () {
-    let homePage;
-    let productPage;
     beforeEach(async () => {
-        homePage = new HomePage();
-        productPage = new ProductPage();
         await homePage.open();
     });
 

@@ -1,9 +1,7 @@
-import HomePage from '../pages/HomePage';
+import { homePage } from '../pages/index.js';
 import { expect } from 'chai';
 describe('Feature: Product sorting', function () {
-    let homePage;
     beforeEach(async () => {
-        homePage = new HomePage();
         await homePage.open();
     });
 
