@@ -1,6 +1,6 @@
 import BasePage from './basePage';
 
-class LoginPage extends BasePage {
+export default class LoginPage extends BasePage {
     get emailInput() {
         return $('#email');
     }
@@ -29,5 +29,3 @@ class LoginPage extends BasePage {
         await this.loginButton.click();
     }
 }
-
-export default new LoginPage();

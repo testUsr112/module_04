@@ -1,6 +1,6 @@
 import BasePage from './basePage';
 
-class ProductPage extends BasePage {
+export default class ProductPage extends BasePage {
     get productName() {
         return $('[data-test="product-name"]');
     }
@@ -85,5 +85,3 @@ class ProductPage extends BasePage {
         await this.favoritesOpt.click();
     }
 }
-
-export default new ProductPage();

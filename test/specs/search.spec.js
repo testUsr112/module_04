@@ -1,14 +1,14 @@
-import { homePage } from '../pages/index.js';
+import { pages } from '../pages/index.js';
 import 'chai/register-should';
 
 describe('Feature: Search', function () {
     beforeEach(async () => {
-        await homePage.open();
+        await pages('home').open();
     });
     it('Scenario: Search by full or partial name', async function () {
-        await homePage.setSearchStr('claw');
-        await homePage.clichSearchButton();
-        let products = await homePage.getProductNames();
+        await pages('home').setSearchStr('claw');
+        await pages('home').clichSearchButton();
+        let products = await pages('home').getProductNames();
         for (let product of products) {
             console.log(product);
             product.toLowerCase().should.include('claw');

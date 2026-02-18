@@ -1,4 +1,4 @@
-class BasePage {
+export default class BasePage {
     open(path = '') {
         return browser.url(path);
     }
@@ -11,5 +11,3 @@ class BasePage {
         return browser.getUrl();
     }
 }
-
-export default BasePage;

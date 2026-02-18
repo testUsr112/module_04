@@ -1,4 +1,4 @@
-class FilterElements {
+export default class FilterElements {
 
     get sortDropdown() {
         return $('[aria-label="sort"]');
@@ -34,4 +34,3 @@ class FilterElements {
         }*/
     }
 }
-export default FilterElements;

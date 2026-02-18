@@ -1,14 +1,14 @@
-import { homePage } from '../pages/index.js';
+import { pages } from '../pages/index.js';
 import { expect } from 'chai';
 
 describe('Feature: Price Range filter', function () {
     beforeEach(async () => {
-        await homePage.open();
+        await pages('home').open();
     });
 
     it('Scenario: Sort by price range', async function () {
-        await homePage.filters.setMinPrice(49);
-        let prices = await homePage.getProductPrices();
+        await pages('home').filters.setMinPrice(49);
+        let prices = await pages('home').getProductPrices();
         for (let p of prices) {
             let price = parseFloat(p);
             expect(price).to.be.above(50);

@@ -1,7 +1,7 @@
 import BasePage from './basePage';
 import FilterElements from './elements/filterElements';
 
-class HomePage extends BasePage {
+export default class HomePage extends BasePage {
 
     get filters() {
         return new FilterElements();
@@ -78,5 +78,3 @@ class HomePage extends BasePage {
     }
 
 }
-
-export default new HomePage();

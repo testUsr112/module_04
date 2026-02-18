@@ -1,6 +1,6 @@
 import BasePage from './basePage';
 
-class CartPage extends BasePage {
+export default class CartPage extends BasePage {
 
     get product() {
         return $('.product-title');
@@ -34,5 +34,3 @@ class CartPage extends BasePage {
         return await this.totalPrice.getText();
     }
 }
-
-export default new CartPage();

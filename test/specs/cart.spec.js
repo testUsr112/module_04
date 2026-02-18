@@ -1,20 +1,20 @@
-import { productPage, cartPage } from '../pages/index.js';
+import { pages } from '../pages/index.js';
 import { assert, expect } from 'chai';
 describe('Feature: Adding to Cart', function () {
     beforeEach(async () => {
-        await productPage.openProductPage('01KH0K6SYZGTHZNDWXBSME470P');
+        await pages('product').openProductPage('01KHS1ZJ5H5NGFN8KT6CA5G8JH');
     });
 
     it('Scenario: Add product to the cart', async function () {
-        await productPage.setQuantityInput(2);
-        await productPage.clickAddToCartButton();
-        expect(await productPage.getCartItemsQuantity()).to.equal('2');
-        await productPage.clickCartIcon();
+        await pages('product').setQuantityInput(2);
+        await pages('product').clickAddToCartButton();
+        expect(await pages('product').getCartItemsQuantity()).to.equal('2');
+        await pages('product').clickCartIcon();
         const pageUrl = await browser.getUrl();
         assert.include(pageUrl, '/checkout', 'User should be on Cart page');
-        expect(await cartPage.getProductName()).to.contain('Pliers');
-        expect(await cartPage.getProductQuantity()).to.equal('2');
-        expect(await cartPage.getProductPrice()).to.contain('12.01');
-        expect(await cartPage.getTotalPrice()).to.contain('24.02');
+        expect(await pages('cart').getProductName()).to.contain('Pliers');
+        expect(await pages('cart').getProductQuantity()).to.equal('2');
+        expect(await pages('cart').getProductPrice()).to.contain('12.01');
+        expect(await pages('cart').getTotalPrice()).to.contain('24.02');
     });
 });
