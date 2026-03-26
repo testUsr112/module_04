@@ -1,4 +1,28 @@
 export const config = {
+    reporters: [ 
+        ['spec',
+            {
+                symbols: {
+                    passed: '[PASS]',
+                    failed: '[FAIL]',
+                },
+                color: true,
+                onlyFailures: false,
+                sauceLabsSharableLinks: true,
+                addConsoleLogs: true,
+                realtimeReporting: true,
+                showPreface: false,
+            }],
+        ['html-nice', {
+            outputDir: './reports/html-reports/',
+            filename: 'report.html',
+            reportTitle: 'Test Report Title',
+            linkScreenshots: true,
+            showInBrowser: true,
+            collapseTests: false,
+            useOnAfterCommandForScreenshot: false
+        }]
+    ],
     //
     // ====================
     // Runner Configuration
