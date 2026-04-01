@@ -31,3 +31,6 @@ build/
 
 # Test coverage directories
 coverage/
+
+# Reports output directory
+reports/
