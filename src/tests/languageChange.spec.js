@@ -1,4 +1,4 @@
-import { pages } from '../pages/index.js';
+import { pages } from '../po/index.js';
 import 'chai/register-should';
 const languages = ['DE', 'ES', 'FR', 'NL', 'TR'];
 

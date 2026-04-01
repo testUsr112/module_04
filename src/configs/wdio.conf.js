@@ -45,7 +45,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/cart.spec.js'
+        '../tests/*.spec.js'
     ],
     // Patterns to exclude.
     exclude: [

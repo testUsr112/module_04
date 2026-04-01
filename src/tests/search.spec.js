@@ -1,4 +1,4 @@
-import { pages } from '../pages/index.js';
+import { pages } from '../po/index.js';
 import 'chai/register-should';
 
 describe('Feature: Search', function () {

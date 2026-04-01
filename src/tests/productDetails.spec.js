@@ -1,4 +1,4 @@
-import { pages } from '../pages/index.js';
+import { pages } from '../po/index.js';
 import { assert, expect } from 'chai';
 
 describe('Feature: Product details page', function () {
