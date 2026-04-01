@@ -1,4 +1,4 @@
-import { pages } from '../pages/index.js';
+import { pages } from '../po/index.js';
 import { expect } from 'chai';
 describe('Feature: Favourites', function () {
     beforeEach(async () => {

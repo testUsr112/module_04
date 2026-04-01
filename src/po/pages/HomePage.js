@@ -1,5 +1,5 @@
 import BasePage from './basePage';
-import FilterElements from './elements/filterElements';
+import FilterElements from '../components/FilterElements';
 
 export default class HomePage extends BasePage {
 

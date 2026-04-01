@@ -1,7 +1,7 @@
-import LoginPage from './loginPage.js';
-import HomePage from './homePage.js';
-import CartPage from './cartPage.js';
-import ProductPage from './productPage.js';
+import LoginPage from './pages/loginPage.js';
+import HomePage from './pages/homePage.js';
+import CartPage from './pages/cartPage.js';
+import ProductPage from './pages/productPage.js';
 
 export function pages(name) {
     const items = {

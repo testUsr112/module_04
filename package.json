@@ -10,7 +10,7 @@
     "wdio-html-nice-reporter": "^8.1.7"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js",
+    "wdio": "wdio run ./src/configs/wdio.conf.js",
     "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html \"reports/html-reports/\""
   },
   "dependencies": {
